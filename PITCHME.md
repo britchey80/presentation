@@ -6,7 +6,7 @@
 ### A Primer on navigating the Git command line
 
 ---
-@title[Getting Started}
+@title[Getting Started]
 ### Getting Started
 <br>
 #### Debian
