@@ -29,4 +29,13 @@
 ---
 @title[sample code]
 
+### Creating a Repository
+
+```shell
+~$mkdir Repository
+~$cd Repository
+~$git init
+Initialized empty Git repository in /home/ben/Repository/.git/
+
+---
 
