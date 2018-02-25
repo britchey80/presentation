@@ -1,7 +1,7 @@
 @title[Introduction]
 
 # Git
-## <span class="green">Command Line Basics</span>
+## <span class="gold">Command Line Basics</span>
 
 ### A Primer on navigating the Git command line
 
