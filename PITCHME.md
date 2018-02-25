@@ -19,7 +19,7 @@
 ~$yum install git
 ```
 <br>
-#### MacOS
+#### Mac
 ```shell
 ~$brew install git
 ```
