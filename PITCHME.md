@@ -13,13 +13,11 @@
 ```shell
 ~$apt-get install git
 ```
-
 <br>
 #### CentOS
 ```shell
 ~$yum install git
 ```
-
 <br>
 #### MacOS
 ```shell
