@@ -25,18 +25,25 @@
 ```
 
 ---
-@title[sample code]
+@title[Make a Repo]
 
 ### Creating a Repository
 
 ```shell
-~$mkdir Repository
-~$cd Repository
-~$git init
+~$mkdir Repo
+~$cd Repo
+/Repo$git init
 Initialized empty Git repository in /home/ben/Repository/.git/
 ```
 
 @[1-2] (Create a directory for your new Repository)
 @[3-4] (Initialize the Repository)
 
---- 
+---
+@title[Add a file]
+
+### Adding a file
+
+```shell
+
+ 
