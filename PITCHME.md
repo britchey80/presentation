@@ -102,7 +102,7 @@ Changes to be committed:
  1 file changed, 1 insertion(+)
  create mode 100644 test.txt
 ```
-@[1] (Commit the changes and prepare them to be pushed to a remote repo)
+@[1] (Commit the changes/tracked files. This will prompt you to add a commit message)
 @[2] (You can add the commit message automatically using "-m")
 @[3-5] (You'll see this output on your initial commit)
 
