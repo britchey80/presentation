@@ -57,7 +57,7 @@ Initial commit
 nothing to commit (create/copy files and use "git add" to track
 ```
 @[1] (Status command)
-@[2-6] (Status output)
+@[2-6] (Status output will give you the current branch, commit and tracked files)
 ---
 @title[Add a file]
 
