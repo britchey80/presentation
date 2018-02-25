@@ -91,5 +91,18 @@ Changes to be committed:
 @[2-12] (Show the untracked files using "git status")
 @[13] (Use "git add" to track the file)
 @[14-22] (Show the tracked files to be commited using "git status"
+---
+@title[Commit tracked files]
+### Commit tracked files
 
- 
+```shell
+/Repo$git commit 
+/Repo$git commit -m "Added line x"
+[master (root-commit) 03e0554] Added line x
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+```
+@[1] (Commit the changes and prepare them to be pushed to a remote repo)
+@[2] (You can add the commit message automatically using "-m")
+@[3-5] (You'll see this output on your initial commit)
+
