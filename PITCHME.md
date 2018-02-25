@@ -130,7 +130,7 @@ origin1 git@bits.example.com:britchey/Test.git (push)
 /Repo$git remote -v
 origin1 git@bits.example.com:britchey/Test.git (fetch)
 origin1 git@bits.example.com:britchey/Test.git (push)
-origin2 https://github.com/britchey80/Test.git (fetch0
+origin2 https://github.com/britchey80/Test.git (fetch)
 origin2 https://github.com/britchey80/Test.git (push)
 ```
 @[1] (You can use this https link for github which will prompt you for your username and password)
