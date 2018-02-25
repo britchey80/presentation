@@ -107,7 +107,7 @@ Changes to be committed:
 @[3-5] (You'll see this output on your initial commit)
 ---
 @title[Remote repository 1]
-### Adding a remote bits repository
+### Adding a remote <span class="gold">bits</span> repository
 
 ```shell
 /Repo$git config --list
