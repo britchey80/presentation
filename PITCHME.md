@@ -32,7 +32,7 @@
 ```shell
 ~$mkdir Repo
 ~$cd Repo
-/Repo$git init
+/Repo$<span class="gold">git init</span>
 Initialized empty Git repository in /home/ben/Repository/.git/
 ```
 
