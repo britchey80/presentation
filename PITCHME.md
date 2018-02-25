@@ -105,4 +105,20 @@ Changes to be committed:
 @[1] (Commit the changes/tracked files. This will prompt you to add a commit message)
 @[2] (You can add the commit message automatically using "-m")
 @[3-5] (You'll see this output on your initial commit)
+---
+@title [Remote repository]
+### Adding a remote bits repository
 
+```shell
+/Repo$git config --list
+credential.helper=osxkeychain
+/Repo$git remote add origin git@bits.example.com:britchey/Test.git
+/Repo$git remote -v
+origin git@bits.example.com:britchey/Test.git (fetch)
+origin git@bits.example.com:britchey/Test.git (push)
+```
+@[1] (bits uses IP whitelisting and pubkey authentication)
+@[1-2] (You'll need to be on the Linode IP/VPN and have your public key available to git)
+@[3] (With bits you'll want to use the SSH syntax for connecting to the remote repo)
+@[4-6] (You can add multiple remote repositories specified by name)
+---
