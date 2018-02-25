@@ -35,5 +35,8 @@
 ~$git init
 Initialized empty Git repository in /home/ben/Repository/.git/
 ```
----
 
+@[1-2] (Create a directory for your new Repository)
+@[3] (Initialize the Repository)
+
+--- 
