@@ -123,7 +123,7 @@ origin1 git@bits.example.com:britchey/Test.git (push)
 @[4-6] (You can add multiple remote repositories specified by name)
 ---
 @title[Remote repository 2]
-### Adding a remote Github repository
+### Adding a remote <span class="gold">Github</span> repository
 
 ```shell
 /Repo$git remote add origin2 https://github.com/britchey80/Test.git
