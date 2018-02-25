@@ -33,7 +33,7 @@
 ~$mkdir Repo
 ~$cd Repo
 /Repo$git init
-Initialized empty Git repository in /home/ben/Repository/.git/
+Initialized empty Git repository in /home/ben/Repo/.git/
 /Repo$ls -a
 . .. .git
 /Repo$ls .git/
@@ -90,6 +90,6 @@ Changes to be committed:
 @[1] (Create a file in the repository)
 @[2-12] (Show the untracked files using "git status")
 @[13] (Use "git add" to track the file)
-@[14-21] (Show the tracked files to be commited using "git status"
+@[14-22] (Show the tracked files to be commited using "git status"
 
  
