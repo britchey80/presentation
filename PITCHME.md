@@ -180,7 +180,7 @@ From bits.linode.com:britchey/Test
 ```
 @[1-4] (Create a new dir and initialize git)
 @[5-6] (Add a remote repository and fetch it)
-@[6-12] (You'll see all of the bracnhes associated with the repo listed in the output)
+@[6-12] (You'll see all of the branches associated with the repo listed in the output)
 ---
 @title[Branching cont]
 
@@ -194,10 +194,40 @@ Branch master set up to track remote branch master from origin.
 Already on 'master'
 /branch$ls -a
 .		..		.git		test.txt
+```
+@[1-2] (You won't see the contents of a branch until you access it)
+@[3-5] (You can access a branch using the "checkout" command)
+@[6-7] (Now that you're in a branch you'll be able to view and access the associated files)
+---
+@title[Branching cont1]
+
+### Swinging to another branch
+
+```shell
 /branch$git checkout newbranch
 Branch newbranch set up to track remote branch newbranch from origin.
 Switched to a new branch 'newbranch'
 /branch$ls -a
 .               ..              .git            test.txt
-/branch$ echo "Let's create another new file" > newfile.txt
+/branch$ echo "Let's create a new file" > newfile.txt
+/branch$git status
+On branch newbranch
+Your branch is up-to-date with 'origin/newbranch'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
 
+	newfile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+/branch$git add newfile.txt
+/branch$git status
+On branch newbranch
+Your branch is up-to-date with 'origin/newbranch'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   newfile.txti
+/branch$ git commit -m "newbranch changes"
+[newbranch 715a277] newbranch changes
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile.txt
