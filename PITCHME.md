@@ -136,6 +136,15 @@ origin2 https://github.com/britchey80/Test.git (push)
 @[1] (You can use this https link for github which will prompt you for your username and password)
 @[2-6] (If you run "git remote -v" you'll see all of the available remote repos)
 ---
+@title[Remove remote]
+
+### Remove a remote repository
+
+```shell
+/Repo$git remote rm origin
+```
+@[1] (In case you need to remove a remote repository)
+---
 @title[Push it real good]
 
 ### Pushing to a remote repo
@@ -151,4 +160,40 @@ To bits.linode.com:britchey/Test.git
 @[1] (Syntax is git push $remote_repo_name $branch)
 @[2-6] (You'll see an output detailing the changes made to the remote repo)
 ---
+@title[Branching]
+
+### Basic Branching
+
+```shell
+~$mkdir branch
+~$cd branch
+/branch$git init
+Initialized empty Git repository in /home/ben/branch/.git/
+/branch$git remote add origin git@bits.example.com:britchey/Test.git
+/branch$git fetch origin
+remote: Counting objects: 9, done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 9
+Unpacking objects: 100% (9/9), done.
+From bits.linode.com:britchey/Test
+ * [new branch]      master     -> origin/master
+ * [new branch]      newbranch  -> origin/newbranch
+---
+@title[Branching cont]
+
+### Basic Branching cont...
+
+```shell
+/branch$ls -a
+.	..	.git
+/bransh$git checkout master
+Branch master set up to track remote branch master from origin.
+Already on 'master'
+/branch$ls -a
+.		..		.git		test.txt
+/branch$git checkout newbranch
+Branch newbranch set up to track remote branch newbranch from origin.
+Switched to a new branch 'newbranch'
+/branch$ls -a
+.               ..              .git            test.txt
+/branch$ echo "Let's create another new file" > newfile.txt
 
