@@ -136,4 +136,19 @@ origin2 https://github.com/britchey80/Test.git (push)
 @[1] (You can use this https link for github which will prompt you for your username and password)
 @[2-6] (If you run "git remote -v" you'll see all of the available remote repos)
 ---
+@title[Push it real good]
+
+### Pushing to a remote repo
+
+```shell
+/Repo$git push origin1 master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 224 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To bits.linode.com:britchey/Test.git
+ * [new branch]      master -> master
+```
+@[1] (Syntax is git push $remote_repo_name $branch)
+@[2-6] (You'll see an output detailing the changes made to the remote repo)
+---
 
