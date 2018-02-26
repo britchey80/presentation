@@ -177,6 +177,10 @@ Unpacking objects: 100% (9/9), done.
 From bits.linode.com:britchey/Test
  * [new branch]      master     -> origin/master
  * [new branch]      newbranch  -> origin/newbranch
+```
+@[1-4] (Create a new dir and initialize git)
+@[5-6] (Add a remote repository and fetch it)
+@[6-12] (You'll see all of the bracnhes associated with the repo listed in the output)
 ---
 @title[Branching cont]
 
