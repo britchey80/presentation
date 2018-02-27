@@ -23,6 +23,25 @@
 ```shell
 ~$brew install git
 ```
+---
+@title[Global configurations]
+
+### Optional configuration settings
+
+```shell
+~#git config --global user.name "britchey"
+~#git config --global user.email "britchey@example.com"
+~#git config --global core.editor vim
+~#cat .gitconfig
+[user]
+	name = britchey
+	email = britchey@example.com
+[core]
+	editor= vim
+```
+@[1-2] (Attaches your information to your activity)
+@[3] (Add a default text editor, vim! or emacs nano...)
+@[4-9] (All of your global configurations will be in the .gitconfig file)
 
 ---
 @title[Make a Repo]
