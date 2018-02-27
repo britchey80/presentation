@@ -89,9 +89,9 @@ Changes to be committed:
 	new file:    test.txt
 ```
 @[1-2] (Create a file in the repository or clone from a remote location)
-@[3-12] (Show the untracked files using "git status")
-@[13] (Use "git add" to track the file)
-@[14-22] (Show the tracked files to be commited using "git status"
+@[3-13] (Show the untracked files using "git status")
+@[14] (Use "git add" to track the file)
+@[15-23] (Show the tracked files to be commited using "git status"
 ---
 @title[Commit tracked files]
 ### Commit tracked files
