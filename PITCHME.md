@@ -246,8 +246,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 @[1-3] (Use the 'checkout' command to move between branches)
 @[4] (Make your changes, create new files, edit existing files)
 @[5-13] (If you run 'git status' you'll see all of the untracked changes)
-@[6] ('git add' to track the modifications)
-@[7-10] ('git commit' to commit the changes to the current branch)
+@[14] ('git add' to track the modifications)
+@[15-18] ('git commit' to commit the changes to the current branch)
 
 ---
 @title[Merging]
