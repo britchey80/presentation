@@ -65,6 +65,7 @@ nothing to commit (create/copy files and use "git add" to track
 
 ```shell
 /Repo$echo "This is my test file" > test.txt
+/Repo$git clone git@bits.example.com:britchey:Test.git
 /Repo$git status
 On branch master
 
@@ -87,8 +88,8 @@ Changes to be committed:
 
 	new file:    test.txt
 ```
-@[1] (Create a file in the repository)
-@[2-12] (Show the untracked files using "git status")
+@[1-2] (Create a file in the repository or clone from a remote location)
+@[3-12] (Show the untracked files using "git status")
 @[13] (Use "git add" to track the file)
 @[14-22] (Show the tracked files to be commited using "git status"
 ---
