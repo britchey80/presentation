@@ -134,17 +134,13 @@ Changes to be committed:
 ### Adding a remote <span class="gold">bits</span> repository
 
 ```shell
-/Repo$git config --list
-credential.helper=osxkeychain
 /Repo$git remote add origin1 git@bits.example.com:britchey/Test.git
 /Repo$git remote -v
 origin1 git@bits.example.com:britchey/Test.git (fetch)
 origin1 git@bits.example.com:britchey/Test.git (push)
 ```
-@[1] (bits uses IP whitelisting and pubkey authentication)
-@[1-2] (You'll need to be on the Linode IP/VPN and have your public key available to git)
-@[3] (With bits you'll want to use the SSH syntax for connecting to the remote repo)
-@[4-6] (You can add multiple remote repositories specified by name)
+@[1] (With bits you'll want to use the SSH syntax for connecting to the remote repo)
+@[2-4] (You can add multiple remote repositories specified by name)
 ---
 @title[Remote repository 2]
 ### Adding a remote <span class="gold">Github</span> repository
