@@ -45,7 +45,7 @@
 @[1-2] (Attaches your information to your activity)
 @[3] (Add a default text editor, vim! or emacs nano...eh)
 @[4] (You'll need to make sure that git has access to your pubkey to access bits remotely)
-@[5-10] (All of your global configurations will be in the .gitconfig file)
+@[5-12] (All of your global configurations will be in the .gitconfig file)
 
 ---
 @title[Make a Repo]
