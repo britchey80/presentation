@@ -227,8 +227,6 @@ Already on 'master'
 /branch$git checkout newbranch
 Branch newbranch set up to track remote branch newbranch from origin.
 Switched to a new branch 'newbranch'
-/branch$ls -a
-.               ..              .git            test.txt
 /branch$ echo "Let's create a new file" > newfile.txt
 /branch$git status
 On branch newbranch
@@ -240,14 +238,40 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 /branch$git add newfile.txt
-/branch$git status
-On branch newbranch
-Your branch is up-to-date with 'origin/newbranch'.
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
-
-	new file:   newfile.txti
 /branch$ git commit -m "newbranch changes"
 [newbranch 715a277] newbranch changes
  1 file changed, 1 insertion(+)
  create mode 100644 newfile.txt
+```
+@[1-3] (Use the 'checkout' command to move between branches)
+@[4] (Make your changes, create new files, edit existing files)
+@[5-13] (If you run 'git status' you'll see all of the untracked changes)
+@[6] ('git add' to track the modifications)
+@[7-10] ('git commit' to commit the changes to the current branch)
+
+---
+@title[Merging]
+
+### Merging branches
+
+```shell
+/branch$git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'Test/master'
+/branch$ls
+test.txt
+/branch$git merge newbranch
+Updating 07a4820..715a277
+Fast-forward
+ newfile.txt | 1 +
+1 files changed, 1 insertion(+), 0 deletion(-)
+create mode 10644 newfile.txt
+/branch$ls
+newfile.txt	test.txt
+```
+@[1] (Move back to the master branch from newbranch)
+@[1-3] (You'll get a status update)
+@[4] ('merge' newbranch with the newfile.txt into the master branch)
+@[5-9] (All of the changes will be displayed in the output)
+@[10-11] (The master branch now has all the changes from newbranch added/merged.  **Merged not overwritten) 
+---
