@@ -32,16 +32,20 @@
 ~#git config --global user.name "britchey"
 ~#git config --global user.email "britchey@example.com"
 ~#git config --global core.editor vim
+~#git config --global credential.helper osxkeychain
 ~#cat .gitconfig
 [user]
 	name = britchey
 	email = britchey@example.com
 [core]
 	editor= vim
+[credential]
+	helper = osxkeychain
 ```
 @[1-2] (Attaches your information to your activity)
-@[3] (Add a default text editor, vim! or emacs nano...)
-@[4-9] (All of your global configurations will be in the .gitconfig file)
+@[3] (Add a default text editor, vim! or emacs nano...eh)
+@[4] (You'll need to make sure that git has access to your pubkey to access bits remotely)
+@[5-10] (All of your global configurations will be in the .gitconfig file)
 
 ---
 @title[Make a Repo]
@@ -122,7 +126,7 @@ Changes to be committed:
  1 file changed, 1 insertion(+)
  create mode 100644 test.txt
 ```
-@[1] (Commit the changes/tracked files. This will prompt you to add a commit message)
+@[1] (Commit the changes/tracked files. This will prompt you to add a commit message using the default editor)
 @[2] (You can add the commit message automatically using "-m")
 @[3-5] (You'll see this output on your initial commit)
 ---
