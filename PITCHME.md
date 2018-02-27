@@ -163,7 +163,7 @@ origin2 https://github.com/britchey80/Test.git (push)
 ```shell
 /Repo$git remote rm origin
 ```
-@[1] (In case you need to remove a remote repository)
+@[1] (In case of oops)
 ---
 @title[Push it real good]
 
