@@ -271,7 +271,8 @@ newfile.txt	test.txt
 ```
 @[1] (Move back to the master branch from newbranch)
 @[1-3] (You'll get a status update)
-@[4] ('merge' newbranch with the newfile.txt into the master branch)
-@[5-9] (All of the changes will be displayed in the output)
-@[10-11] (The master branch now has all the changes from newbranch added/merged.  **Merged not overwritten) 
+@[4-5] (You won't see the changes that were made on the newbranch) 
+@[6] ('merge' newbranch with the newfile.txt into the master branch)
+@[7-11] (All of the changes will be displayed in the output)
+@[12-13] (The master branch now has all the changes from newbranch added/merged.  **Merged not overwritten) 
 ---
