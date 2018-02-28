@@ -320,22 +320,38 @@ Swtiched to branch 'newbranch'
 
 #### 1) Fork the source repo in the bits or github interface
 #### 2) Add the newly forked repo as the remote repo in git
-#####	<span class="gold">git remote add origin git@bits.linode.com:britchey/repo.git</span>
+```shell
+git remote add origin git@bits.linode.com:britchey/repo.git
+```
 #### 3) Fetch the contents of the repo
-#####	<span class="gold">git fetch origin</span>
+```shell
+git fetch origin
+```
 ---
 #### 4) Branch the master 
-#####	<span class="gold">git checkout -b newbranch</span>
+```shell
+git checkout -b newbranch
+```
 #### 5) Make changes, edit or add files
 #### 6) Track the changes
-#####	<span class="gold">git add file1, file2</span>
+```shell
+git add file1, file2
+```
 #### 7) Commit the tracked changes
-#####	<span class="gold">git commit -m "Changes"</span>
+```shell
+git commit -m "Changes"
+```
 ---
 #### 8) Switch back to the master branch
-#####	<span class="gold">git checkout master</span>
+```shell
+git checkout master
+```
 #### 9) Merge the changes in newbranch with the master branch
-#####	<span class="gold">git merge newbranch</span>
+```shell
+git merge newbranch
+```
 #### 10) Push the updated repo to the remote repo
-#####	<span class="gold">git push origin</span>
+```shell
+git push origin
+```
 #### 11) Submit the PR request in the bits or github interface 
