@@ -276,3 +276,13 @@ newfile.txt	test.txt
 @[7-11] (All of the changes will be displayed in the output)
 @[12-13] (The master branch now has all the changes from newbranch added/merged.  **Merged not overwritten) 
 ---
+@title[Pull Request]
+
+### Pull Request using git
+
+## 1) Fork the source repo in bits or github
+## 2) Add the newly forked repo as the remote repo in git
+##	git remote add origin git@bits.linode.com:britchey/repo.git
+## 3) Fetch the contents of the repo
+##	git fetch origin
+## 4) 
