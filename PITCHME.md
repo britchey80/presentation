@@ -189,21 +189,6 @@ Already on 'master'
 @[10-11] (You were already on master but it wasn't tracking from the remote repo origin)
 @[12-13] (You now have access to the contents of the master branch of the remote repo)
 ---
-@title[Push it real good]
-
-### <span class="gold">Push</span> to a remote repo
-
-```shell
-/Repo$git push origin1 master
-Counting objects: 3, done.
-Writing objects: 100% (3/3), 224 bytes | 0 bytes/s, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To bits.linode.com:britchey/Test.git
- * [new branch]      master -> master
-```
-@[1] (Syntax is git push $remote_repo_name $branch)
-@[2-6] (You'll see an output detailing the changes made to the remote repo)
----
 @title[Branching]
 
 ### Basic <span class="gold">Branch</span>ing
@@ -310,9 +295,24 @@ Swtiched to branch 'newbranch'
 /Repo$git checkout -b newbranch
 ```
 @[1] (This will create a new branch)
-@[2] (To access the new branch you'll have to check it out)
-@[3] (You can do both steps in one command with the '-b' option)
+@[2-3] (To access the new branch you'll have to check it out)
+@[4] (You can do both steps in one command with the '-b' option)
 
+---
+@title[Push it real good]
+
+### <span class="gold">Push</span> to a remote repo
+
+```shell
+/Repo$git push origin1 master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 224 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To bits.linode.com:britchey/Test.git
+ * [new branch]      master -> master
+```
+@[1] (Syntax is git push $remote_repo_name $branch)
+@[2-6] (You'll see an output detailing the changes made to the remote repo)
 ---
 @title[Pull Request]
 
