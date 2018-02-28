@@ -26,7 +26,7 @@
 ---
 @title[Global configurations]
 
-### Optional configuration settings
+### Optional <span class="gold">Configuration</span> settings
 
 ```shell
 ~#git config --global user.name "britchey"
@@ -50,7 +50,7 @@
 ---
 @title[Make a Repo]
 
-### Creating a Repository
+### <span class="gold">Initializing</span> a Repository
 
 ```shell
 ~$mkdir Repo
@@ -69,7 +69,7 @@ branches config description HEAD hooks info objects refs
 @[7-8] (In .git you can see all of the files that make up the Repository)
 ---
 @title[Status]
-### Git Status
+### Git <span class="gold">Status</span>
 
 ```shell
 /Repo$git status
@@ -84,7 +84,7 @@ nothing to commit (create/copy files and use "git add" to track
 ---
 @title[Add a file]
 
-### Adding a file
+### <span class="gold">Add</span> a file
 
 ```shell
 /Repo$echo "This is my test file" > test.txt
@@ -117,7 +117,7 @@ Changes to be committed:
 @[15-23] (Show the tracked files to be commited using "git status")
 ---
 @title[Commit tracked files]
-### Commit tracked files
+### <span class="gold">Commit</span> tracked files
 
 ```shell
 /Repo$git commit 
@@ -158,7 +158,7 @@ origin2 https://github.com/britchey80/Test.git (push)
 ---
 @title[Remove remote]
 
-### Remove a remote repository
+### <span class="gold">Remove</span> a remote repository
 
 ```shell
 /Repo$git remote rm origin
@@ -166,7 +166,7 @@ origin2 https://github.com/britchey80/Test.git (push)
 @[1] (In case of oops)
 ---
 @title[That's so fetch]
-### Fetching a remote repository
+### <span class="gold">Fetch</span> a remote repository
 ```shell
 /Repo$git fetch origin1
 remote: Counting objects: 3, done.
@@ -191,7 +191,7 @@ Already on 'master'
 ---
 @title[Push it real good]
 
-### Pushing to a remote repo
+### <span class="gold">Push</span> to a remote repo
 
 ```shell
 /Repo$git push origin1 master
@@ -206,7 +206,7 @@ To bits.linode.com:britchey/Test.git
 ---
 @title[Branching]
 
-### Basic Branching
+### Basic <span class="gold">Branching</span>
 
 ```shell
 ~$mkdir branch
@@ -228,7 +228,7 @@ From bits.linode.com:britchey/Test
 ---
 @title[Branching cont]
 
-### Basic Branching cont...
+### <span class="gold">Branching</span> cont...
 
 ```shell
 /branch$ls -a
@@ -245,7 +245,7 @@ Already on 'master'
 ---
 @title[Branching cont1]
 
-### Swinging to another branch
+### <span class="gold">Checkout</span> another branch
 
 ```shell
 /branch$git checkout newbranch
@@ -276,7 +276,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ---
 @title[Merging]
 
-### Merging branches
+### <span class="gold">Merge</span> branches
 
 ```shell
 /branch$git checkout master
@@ -302,7 +302,7 @@ newfile.txt	test.txt
 ---
 @title[Pull Request]
 
-### Pull Request using git
+### <span class="gold">Pull Requests</span> using git
 
 ## 1) Fork the source repo in bits or github
 ## 2) Add the newly forked repo as the remote repo in git
