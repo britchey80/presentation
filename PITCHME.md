@@ -165,6 +165,30 @@ origin2 https://github.com/britchey80/Test.git (push)
 ```
 @[1] (In case of oops)
 ---
+@title[That's so fetch]
+### Fetching a remote repository
+```shell
+/Repo$git fetch origin1
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From bits.linode.com:britchey/Test
+ * [new branch]      master     -> origin/master
+/Repo$ls -a
+.	..	.git
+/Repo$git checkout master
+Branch master set up to track remote branch master from origin.
+Already on 'master'
+/Repo$ls -a
+.	..	.git	test.txt
+```
+@[1] ('git fetch $repo_name' to fetch the content of a remote repo)
+@[2-6] (The output will show you all of the branches being moved to the local repo)
+@[7-8] (You won't be able to see any of the content of the branches until you move to that branch)
+@[9] (You'll need to 'checkout' a branch before you can access the content)
+@[10-11] (You were already on master but it wasn't tracking from the remote repo origin)
+@[12-13] (You now have access to the contents of the master branch of the remote repo)
+---
 @title[Push it real good]
 
 ### Pushing to a remote repo
