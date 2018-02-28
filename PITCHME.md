@@ -50,7 +50,7 @@
 ---
 @title[Make a Repo]
 
-### <span class="gold">Initializing</span> a Repository
+### <span class="gold">Init</span>ializing a Repository
 
 ```shell
 ~$mkdir Repo
@@ -158,7 +158,7 @@ origin2 https://github.com/britchey80/Test.git (push)
 ---
 @title[Remove remote]
 
-### <span class="gold">Remove</span> a remote repository
+### <span class="gold">R</span>e<span class="gold">m</span>ove a remote repository
 
 ```shell
 /Repo$git remote rm origin
@@ -206,7 +206,7 @@ To bits.linode.com:britchey/Test.git
 ---
 @title[Branching]
 
-### Basic <span class="gold">Branching</span>
+### Basic <span class="gold">Branch</span>ing
 
 ```shell
 ~$mkdir branch
@@ -228,7 +228,7 @@ From bits.linode.com:britchey/Test
 ---
 @title[Branching cont]
 
-### <span class="gold">Branching</span> cont...
+### <span class="gold">Branch</span>ing cont...
 
 ```shell
 /branch$ls -a
@@ -300,13 +300,40 @@ newfile.txt	test.txt
 @[7-11] (All of the changes will be displayed in the output)
 @[12-13] (The master branch now has all the changes from newbranch added/merged.  **Merged not overwritten) 
 ---
+@title[The last branch]
+### Creating a branch
+
+```shell
+/Repo$git branch newbranch
+/Repo$git checkout newbranch
+Swtiched to branch 'newbranch'
+/Repo$git checkout -b newbranch
+```
+@[1] (This will create a new branch)
+@[2] (To access the new branch you'll have to check it out)
+@[3] (You can do both steps in one command with the '-b' option)
+
+---
 @title[Pull Request]
 
 ### <span class="gold">Pull Requests</span> using git
 
-## 1) Fork the source repo in bits or github
+## 1) Fork the source repo in the bits or github interface
 ## 2) Add the newly forked repo as the remote repo in git
 ##	git remote add origin git@bits.linode.com:britchey/repo.git
 ## 3) Fetch the contents of the repo
 ##	git fetch origin
-## 4) 
+## 4) Branch the master 
+##	git checkout -b newbranch
+## 5) Make changes, edit or add files
+## 6) Track the changes
+##	git add <file1>, <file1>
+## 7) Commit the tracked changes
+##	git commit -m "Changes"
+## 8) Switch back to the master branch
+##	git checkout master
+## 9) Merge the changes in newbranch with the master branch
+##	git merge newbranch
+## 10) Push the updated repo to the remote repo
+##	git push origin
+## 11) Submit the PR request in the bits or github interface 
