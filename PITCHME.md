@@ -323,6 +323,7 @@ Swtiched to branch 'newbranch'
 #####	<span class="gold">git remote add origin git@bits.linode.com:britchey/repo.git</span>
 #### 3) Fetch the contents of the repo
 #####	<span class="gold">git fetch origin</span>
+---
 #### 4) Branch the master 
 #####	<span class="gold">git checkout -b newbranch</span>
 #### 5) Make changes, edit or add files
@@ -330,6 +331,7 @@ Swtiched to branch 'newbranch'
 #####	<span class="gold">git add file1, file2</span>
 #### 7) Commit the tracked changes
 #####	<span class="gold">git commit -m "Changes"</span>
+---
 #### 8) Switch back to the master branch
 #####	<span class="gold">git checkout master</span>
 #### 9) Merge the changes in newbranch with the master branch
