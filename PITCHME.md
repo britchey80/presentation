@@ -26,7 +26,7 @@
 ---
 @title[Global configurations]
 
-### Optional <span class="gold">Configuration</span> settings
+### Optional <span class="gold">Config</span>uration settings
 
 ```shell
 ~#git config --global user.name "britchey"
