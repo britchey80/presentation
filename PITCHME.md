@@ -318,22 +318,22 @@ Swtiched to branch 'newbranch'
 
 ### <span class="gold">Pull Requests</span> using git
 
-## 1) Fork the source repo in the bits or github interface
-## 2) Add the newly forked repo as the remote repo in git
-##	git remote add origin git@bits.linode.com:britchey/repo.git
-## 3) Fetch the contents of the repo
-##	git fetch origin
-## 4) Branch the master 
-##	git checkout -b newbranch
-## 5) Make changes, edit or add files
-## 6) Track the changes
-##	git add <file1>, <file1>
-## 7) Commit the tracked changes
-##	git commit -m "Changes"
-## 8) Switch back to the master branch
-##	git checkout master
-## 9) Merge the changes in newbranch with the master branch
-##	git merge newbranch
-## 10) Push the updated repo to the remote repo
-##	git push origin
-## 11) Submit the PR request in the bits or github interface 
+#### 1) Fork the source repo in the bits or github interface
+#### 2) Add the newly forked repo as the remote repo in git
+####	git remote add origin git@bits.linode.com:britchey/repo.git
+#### 3) Fetch the contents of the repo
+####	git fetch origin
+#### 4) Branch the master 
+####	git checkout -b newbranch
+#### 5) Make changes, edit or add files
+#### 6) Track the changes
+####	git add <file1>, <file1>
+#### 7) Commit the tracked changes
+####	git commit -m "Changes"
+#### 8) Switch back to the master branch
+####	git checkout master
+#### 9) Merge the changes in newbranch with the master branch
+####	git merge newbranch
+#### 10) Push the updated repo to the remote repo
+####	git push origin
+#### 11) Submit the PR request in the bits or github interface 
